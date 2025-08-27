@@ -1,0 +1,42 @@
+# Environment
+.env
+.env.local
+*.pyc
+__pycache__/
+.DS_Store
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+local.db
+
+# Secrets
+secrets/
+*.key
+*.pem
+
+# Node
+node_modules/
+package-lock.json
+
+# Python
+*.egg-info/
+dist/
+build/
+
+# Streamlit
+.streamlit/secrets.toml
