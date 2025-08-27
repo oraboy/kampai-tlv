@@ -40,3 +40,6 @@ build/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local Netlify folder
+.netlify

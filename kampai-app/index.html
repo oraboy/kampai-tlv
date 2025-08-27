@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampai TLV - Premium Japanese Imports | יבוא יפני פרימיום</title>
+    <meta name="description" content="Direct import of premium Japanese ingredients to Tel Aviv. Uni, Wagyu, Sake, and more.">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">🍶 Kampai TLV</div>
+            <div class="nav-links">
+                <a href="#products">מוצרים</a>
+                <a href="#about">אודות</a>
+                <a href="tel:+972501234567">📞 050-123-4567</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <h1>היבואן הישיר שלך מיפן</h1>
+            <p class="subtitle">Your Direct Japanese Import Partner</p>
+            <p class="tagline">מהשווקים של טוקיו ישירות למטבח שלך</p>
+            <div class="cta-buttons">
+                <button onclick="openWhatsApp()" class="btn-primary">
+                    💬 WhatsApp לקבלת קטלוג
+                </button>
+                <button onclick="showProducts()" class="btn-secondary">
+                    📋 ראה מוצרים
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature">
+                    <span class="icon">🚀</span>
+                    <h3>משלוחים שבועיים</h3>
+                    <p>ישירות מיפן כל שבוע</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">⭐</span>
+                    <h3>איכות פרימיום</h3>
+                    <p>רק המוצרים הטובים ביותר</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">👨‍🍳</span>
+                    <h3>למסעדות ושפים</h3>
+                    <p>שירות מותאם למקצוענים</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>המוצרים שלנו | Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-header">
+                        <span class="emoji">🦪</span>
+                        <span class="badge">השבוע</span>
+                    </div>
+                    <h3>Uni (אוני)</h3>
+                    <p>אוני טרי מהוקאידו</p>
+                    <p class="price">₪450/100g</p>
+                    <button onclick="orderProduct('Uni')">הזמן עכשיו</button>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-header">
+                        <span class="emoji">🥩</span>
+                        <span class="badge">הזמנה מראש</span>
+                    </div>
+                    <h3>Wagyu A5</h3>
+                    <p>בקר וואגיו ממיאזאקי</p>
+                    <p class="price">₪850/kg</p>
+                    <button onclick="orderProduct('Wagyu')">הזמן עכשיו</button>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-header">
+                        <span class="emoji">🍶</span>
+                        <span class="badge">במלאי</span>
+                    </div>
+                    <h3>Premium Sake</h3>
+                    <p>מבחר סאקה מובחר</p>
+                    <p class="price">₪180+</p>
+                    <button onclick="orderProduct('Sake')">ראה מבחר</button>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-header">
+                        <span class="emoji">🐟</span>
+                        <span class="badge">עונתי</span>
+                    </div>
+                    <h3>Seasonal Fish</h3>
+                    <p>דגים טריים מצוקיג'י</p>
+                    <p class="price">לפי השוק</p>
+                    <button onclick="orderProduct('Fish')">בדוק זמינות</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>אודות Kampai TLV</h2>
+            <p>אנחנו מביאים את המרכיבים היפניים הטובים ביותר ישירות לתל אביב.</p>
+            <p>בעלים: אורן רבוי | מעל 10 שנות ניסיון במטבח היפני</p>
+            <div class="contact-info">
+                <p>📞 050-123-4567</p>
+                <p>📧 info@kampaitlv.com</p>
+                <p>📍 תל אביב</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="ai-chat" class="ai-chat-widget">
+        <button id="chat-toggle" onclick="toggleChat()">
+            <span>💬</span>
+            <span>שאל על מוצרים</span>
+        </button>
+        <div id="chat-window" style="display:none;">
+            <div class="chat-header">
+                <span>Kampai Assistant</span>
+                <button onclick="toggleChat()">×</button>
+            </div>
+            <div id="messages"></div>
+            <input type="text" id="chat-input" placeholder="שאל אותי על המוצרים..." onkeypress="handleChat(event)">
+        </div>
+    </div>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
