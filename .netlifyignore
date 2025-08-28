@@ -1,0 +1,17 @@
+# Ignore Python/Streamlit parts
+wingman/
+venv/
+*.py
+__pycache__/
+.env
+test_*.py
+mcp_servers/
+streamlit_app.py
+
+# Keep only Next.js parts
+!package.json
+!next.config.js
+!app/
+!components/
+!public/
+!styles/
