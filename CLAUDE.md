@@ -63,25 +63,46 @@ npm run lint        # Run ESLint (Next.js config)
 
 ## Project Structure
 
+**IMPORTANT: Clean Folder Organization (Sept 2024)**
+
 ```
-app/
-├── page.tsx        # Main landing page component
-├── layout.tsx      # Root layout with metadata
+app/                 # MAIN WEBSITE - Kampai TLV Japanese Food Business
+├── page.tsx        # Landing page with Japanese food products (Hebrew RTL + English)
+├── layout.tsx      # Root layout with SEO metadata
 └── globals.css     # Global Tailwind styles
 
-*.config.js         # Configuration files (Next.js, Tailwind, PostCSS)
-netlify.toml        # Netlify deployment configuration
+wingman/            # AI AGENT SYSTEM - Python-based AI wingman logic
+├── agents/         # AI agent implementations
+├── integrations/   # External service integrations (WhatsApp, Gmail, etc.)
+├── pages/          # Streamlit pages
+├── utils/          # Utility functions
+└── streamlit_app.py # Main AI agent interface
+
+# Configuration files (root level)
+├── next.config.js          # Next.js configuration
+├── tailwind.config.js      # Tailwind CSS configuration  
+├── netlify.toml           # Netlify deployment configuration
+├── package.json           # Node.js dependencies
+└── tsconfig.json          # TypeScript configuration
 ```
+
+**Folder Purpose Clarification:**
+- `app/` = Main business website deployed to kampai-tlv.com
+- `wingman/` = AI agent code for business operations
+- **NO OTHER WEBSITE FOLDERS** - kampai-app/ was removed, don't get confused
 
 ## Development Notes
 
 - Uses App Router (not Pages Router)
 - TypeScript strict mode enabled
 - Path mapping configured: `@/*` maps to root directory
-- Current landing page displays Kampai TLV branding but needs to be updated for food business focus
+- **Current Status**: Landing page now displays Japanese food import business with Hebrew RTL support
+- **WhatsApp Integration**: Product ordering via WhatsApp (`wa.me/972501234567`)
+- **Bilingual Content**: Hebrew primary with English translations
+- **Product Showcase**: Uni, Wagyu A5, Premium Sake, Seasonal Fish with pricing
 - AI SDKs are installed but not yet implemented in the UI
 - Legacy Python files (test_apis.py, test_gemini.py) exist for API testing
-- Project is in early stages - current website shows nightlife theme but business is Japanese food import
+- **Website Theme**: Clean, professional Japanese food business (no longer nightlife)
 
 ## Business Values & Goals
 
