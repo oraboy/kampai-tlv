@@ -513,39 +513,39 @@ function KampaiLandingContent() {
             
             <div className="text-center">
               <Star className="w-12 h-12 text-gray-800 mx-auto mb-6" />
-              <h3 className="text-xl font-medium mb-4 text-gray-900">Private Chefs</h3>
+              <h3 className="text-xl font-medium mb-4 text-gray-900">{t('service.chefs.title')}</h3>
               <p className="text-gray-600 font-light leading-relaxed">
-                A thriving community of private chefs and caterers focused on high-end dining requiring regular supply of elegant, diverse materials.
+                {t('service.chefs.desc')}
               </p>
             </div>
             
             <div className="text-center">
               <Heart className="w-12 h-12 text-gray-800 mx-auto mb-6" />
-              <h3 className="text-xl font-medium mb-4 text-gray-900">Foodies & Japanophiles</h3>
+              <h3 className="text-xl font-medium mb-4 text-gray-900">{t('service.foodies.title')}</h3>
               <p className="text-gray-600 font-light leading-relaxed">
-                Growing group of passionate food enthusiasts and Japan lovers who craft, experience, and share the best food Japan has to offer.
+                {t('service.foodies.desc')}
               </p>
             </div>
           </div>
           
           {/* Values */}
           <div className="bg-white rounded-2xl p-12">
-            <h3 className="text-2xl font-light text-gray-900 mb-8 text-center">Our Values</h3>
+            <h3 className="text-2xl font-light text-gray-900 mb-8 text-center">{t('values.title')}</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <Shield className="w-8 h-8 text-gray-600 mx-auto mb-4" />
-                <h4 className="font-medium mb-2 text-gray-900">Quality</h4>
-                <p className="text-sm text-gray-600 font-light">Bringing the best Japanese food products to Israel's culinary community</p>
+                <h4 className="font-medium mb-2 text-gray-900">{t('values.quality.title')}</h4>
+                <p className="text-sm text-gray-600 font-light">{t('values.quality.desc')}</p>
               </div>
               <div className="text-center">
                 <Heart className="w-8 h-8 text-gray-600 mx-auto mb-4" />
-                <h4 className="font-medium mb-2 text-gray-900">Personal Touch</h4>
-                <p className="text-sm text-gray-600 font-light">Premium, personalized service for customers and suppliers</p>
+                <h4 className="font-medium mb-2 text-gray-900">{t('values.personal.title')}</h4>
+                <p className="text-sm text-gray-600 font-light">{t('values.personal.desc')}</p>
               </div>
               <div className="text-center">
                 <Clock className="w-8 h-8 text-gray-600 mx-auto mb-4" />
-                <h4 className="font-medium mb-2 text-gray-900">Streamlined</h4>
-                <p className="text-sm text-gray-600 font-light">Quality-controlled delivery process ensuring freshness and affordability</p>
+                <h4 className="font-medium mb-2 text-gray-900">{t('values.streamlined.title')}</h4>
+                <p className="text-sm text-gray-600 font-light">{t('values.streamlined.desc')}</p>
               </div>
             </div>
           </div>
@@ -556,14 +556,14 @@ function KampaiLandingContent() {
       <section id="how-it-works" className="py-24 px-6 bg-gradient-to-b from-blue-50 to-cyan-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">How It Works</h2>
+            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">{t('howItWorks.title')}</h2>
             <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              Our simple process ensures premium Japanese products arrive fresh and on time
+              {t('howItWorks.subtitle')}
             </p>
             <div className="mt-8 inline-block bg-gray-100 px-6 py-3 rounded-full">
               <div className="flex items-center gap-2">
                 <Calendar className="w-5 h-5 text-gray-600" />
-                <span className="text-lg font-medium text-gray-800">4-12 Planned Shipments Per Year</span>
+                <span className="text-lg font-medium text-gray-800">4-12 {t('howItWorks.shipments')}</span>
               </div>
             </div>
           </div>
@@ -574,9 +574,9 @@ function KampaiLandingContent() {
                 <ShoppingCart className="w-14 h-14 text-gray-800" />
                 <span className="text-xs font-bold text-gray-600 mt-1">1</span>
               </div>
-              <h3 className="text-lg font-medium mb-4 text-gray-900">Pre-Order</h3>
+              <h3 className="text-lg font-medium mb-4 text-gray-900">{t('howItWorks.preorder.title')}</h3>
               <p className="text-sm text-gray-600 font-light leading-relaxed">
-                We connect with Tel Aviv chefs and restaurants to build a list of desired products through our storefront and concierge service.
+                {t('howItWorks.preorder.desc')}
               </p>
             </div>
             
@@ -585,9 +585,9 @@ function KampaiLandingContent() {
                 <Plane className="w-14 h-14 text-gray-800" />
                 <span className="text-xs font-bold text-gray-600 mt-1">2</span>
               </div>
-              <h3 className="text-lg font-medium mb-4 text-gray-900">Procurement</h3>
+              <h3 className="text-lg font-medium mb-4 text-gray-900">{t('howItWorks.procurement.title')}</h3>
               <p className="text-sm text-gray-600 font-light leading-relaxed">
-                Our Japanese partners procure and ship all customer products to our Israeli distribution center.
+                {t('howItWorks.procurement.desc')}
               </p>
             </div>
             
@@ -596,9 +596,9 @@ function KampaiLandingContent() {
                 <Truck className="w-14 h-14 text-gray-800" />
                 <span className="text-xs font-bold text-gray-600 mt-1">3</span>
               </div>
-              <h3 className="text-lg font-medium mb-4 text-gray-900">Distribution</h3>
+              <h3 className="text-lg font-medium mb-4 text-gray-900">{t('howItWorks.distribution.title')}</h3>
               <p className="text-sm text-gray-600 font-light leading-relaxed">
-                Kampai TLV arranges distribution of goods to customers within 24 hours of customs clearance.
+                {t('howItWorks.distribution.desc')}
               </p>
             </div>
             
@@ -607,9 +607,9 @@ function KampaiLandingContent() {
                 <Utensils className="w-14 h-14 text-gray-800" />
                 <span className="text-xs font-bold text-gray-600 mt-1">4</span>
               </div>
-              <h3 className="text-lg font-medium mb-4 text-gray-900">Enjoy</h3>
+              <h3 className="text-lg font-medium mb-4 text-gray-900">{t('howItWorks.enjoy.title')}</h3>
               <p className="text-sm text-gray-600 font-light leading-relaxed">
-                Customers cook and enjoy the finest Japanese materials, creating incredible dining experiences.
+                {t('howItWorks.enjoy.desc')}
               </p>
             </div>
           </div>
@@ -620,8 +620,8 @@ function KampaiLandingContent() {
       <section id="products" className="py-24 px-6 bg-gradient-to-b from-amber-50 to-orange-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">Our Products</h2>
-            <p className="text-xl text-gray-600 font-light">A selection of our premium Japanese ingredients</p>
+            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">{t('products.title')}</h2>
+            <p className="text-xl text-gray-600 font-light">{t('products.subtitle')}</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-12">
@@ -634,15 +634,15 @@ function KampaiLandingContent() {
                 />
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-light mb-4 text-gray-900">Uni</h3>
+                <h3 className="text-2xl font-light mb-4 text-gray-900">{t('products.uni.title')}</h3>
                 <p className="text-gray-600 font-light mb-6 leading-relaxed">
-                  Premium sea urchin from Hokkaido's pristine waters. Known for its creamy texture and sweet, briny flavor that elevates any sushi or sashimi experience.
+                  {t('products.uni.desc')}
                 </p>
                 <button 
                   onClick={() => orderProduct('Premium Uni from Hokkaido')}
                   className="text-gray-800 hover:text-gray-900 font-medium transition-colors border-b border-gray-300 hover:border-gray-500"
                 >
-                  Inquire About Availability →
+                  {t('products.inquire')}
                 </button>
               </div>
             </div>
@@ -656,15 +656,15 @@ function KampaiLandingContent() {
                 />
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-light mb-4 text-gray-900">Unagi</h3>
+                <h3 className="text-2xl font-light mb-4 text-gray-900">{t('products.unagi.title')}</h3>
                 <p className="text-gray-600 font-light mb-6 leading-relaxed">
-                  Freshwater eel prepared using traditional Japanese methods. Rich, savory, and perfectly glazed with authentic tare sauce for an authentic experience.
+                  {t('products.unagi.desc')}
                 </p>
                 <button 
                   onClick={() => orderProduct('Premium Unagi with traditional preparation')}
                   className="text-gray-800 hover:text-gray-900 font-medium transition-colors border-b border-gray-300 hover:border-gray-500"
                 >
-                  Inquire About Availability →
+                  {t('products.inquire')}
                 </button>
               </div>
             </div>
@@ -678,15 +678,15 @@ function KampaiLandingContent() {
                 />
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-light mb-4 text-gray-900">Binchotan</h3>
+                <h3 className="text-2xl font-light mb-4 text-gray-900">{t('products.binchotan.title')}</h3>
                 <p className="text-gray-600 font-light mb-6 leading-relaxed">
-                  Premium Japanese charcoal prized for its ability to burn at high temperatures with minimal smoke, perfect for authentic yakitori and robatayaki cooking.
+                  {t('products.binchotan.desc')}
                 </p>
                 <button 
                   onClick={() => orderProduct('Premium Binchotan charcoal')}
                   className="text-gray-800 hover:text-gray-900 font-medium transition-colors border-b border-gray-300 hover:border-gray-500"
                 >
-                  Inquire About Availability →
+                  {t('products.inquire')}
                 </button>
               </div>
             </div>
@@ -697,7 +697,7 @@ function KampaiLandingContent() {
               onClick={openWhatsApp}
               className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors"
             >
-              Browse Our Full Catalog
+              {t('products.browseCatalog')}
             </button>
           </div>
         </div>
@@ -707,60 +707,60 @@ function KampaiLandingContent() {
       <section id="contact" className="py-24 px-6 bg-gradient-to-b from-purple-50 to-indigo-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">Contact Us</h2>
+            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">{t('contact.title')}</h2>
             <p className="text-xl text-gray-600 font-light">
-              Ready to bring premium Japanese ingredients to your kitchen?
+              {t('contact.subtitle')}
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-light mb-8 text-gray-900">Get In Touch</h3>
+              <h3 className="text-2xl font-light mb-8 text-gray-900">{t('contact.getInTouch')}</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <Phone className="w-5 h-5 text-gray-600" />
                   <div>
-                    <p className="font-medium text-gray-900">WhatsApp</p>
+                    <p className="font-medium text-gray-900">{t('contact.whatsapp')}</p>
                     <p className="text-gray-600">+972-54-544-8423</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail className="w-5 h-5 text-gray-600" />
                   <div>
-                    <p className="font-medium text-gray-900">Email</p>
+                    <p className="font-medium text-gray-900">{t('contact.email')}</p>
                     <p className="text-gray-600">info@kampaitlv.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <MapPin className="w-5 h-5 text-gray-600" />
                   <div>
-                    <p className="font-medium text-gray-900">Location</p>
-                    <p className="text-gray-600">Tel Aviv, Israel</p>
+                    <p className="font-medium text-gray-900">{t('contact.location')}</p>
+                    <p className="text-gray-600">{t('contact.locationValue')}</p>
                   </div>
                 </div>
               </div>
             </div>
             
             <div className="bg-gray-50 rounded-2xl p-8">
-              <h3 className="text-xl font-medium mb-6 text-gray-900">Send Us A Message</h3>
+              <h3 className="text-xl font-medium mb-6 text-gray-900">{t('contact.sendMessage')}</h3>
               <form className="space-y-4">
                 <input 
                   type="text" 
-                  placeholder="Your Name" 
+                  placeholder={t('contact.form.name')} 
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-gray-400 focus:outline-none transition-colors"
                 />
                 <input 
                   type="email" 
-                  placeholder="Your Email" 
+                  placeholder={t('contact.form.email')} 
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-gray-400 focus:outline-none transition-colors"
                 />
                 <input 
                   type="text" 
-                  placeholder="Restaurant/Business Name" 
+                  placeholder={t('contact.form.business')} 
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-gray-400 focus:outline-none transition-colors"
                 />
                 <textarea 
-                  placeholder="What products are you interested in?"
+                  placeholder={t('contact.form.products')}
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-gray-400 focus:outline-none transition-colors resize-none"
                 ></textarea>
@@ -768,7 +768,7 @@ function KampaiLandingContent() {
                   type="submit"
                   className="w-full bg-gray-900 hover:bg-gray-800 text-white py-3 rounded-lg font-medium transition-colors"
                 >
-                  Send Message
+                  {t('contact.form.send')}
                 </button>
               </form>
             </div>
@@ -796,12 +796,12 @@ function KampaiLandingContent() {
             <div>
               <h3 className="text-xl font-light mb-4">Kampai TLV</h3>
               <p className="text-gray-400 font-light text-sm leading-relaxed">
-                Bringing premium Japanese fresh food products directly from Tokyo's markets to Israel's finest dining establishments.
+                {t('footer.description')}
               </p>
             </div>
             
             <div>
-              <h4 className="font-medium mb-4">Contact</h4>
+              <h4 className="font-medium mb-4">{t('footer.contact')}</h4>
               <div className="space-y-2 text-sm text-gray-400">
                 <p>+972-54-544-8423</p>
                 <p>info@kampaitlv.com</p>
@@ -810,17 +810,17 @@ function KampaiLandingContent() {
             </div>
             
             <div>
-              <h4 className="font-medium mb-4">Founded by</h4>
+              <h4 className="font-medium mb-4">{t('footer.foundedBy')}</h4>
               <p className="text-gray-400 text-sm">
-                Oren Raboy<br />
-                Japanese cuisine enthusiast<br />
-                10+ years experience
+                {t('footer.founder.name')}<br />
+                {t('footer.founder.title1')}<br />
+                {t('footer.founder.title2')}
               </p>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2025 Kampai TLV. Made with care in Tel Aviv.</p>
+            <p>{t('footer.copyright')}</p>
           </div>
         </div>
       </footer>
