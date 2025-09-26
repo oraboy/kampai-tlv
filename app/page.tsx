@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { MessageCircle, Star, ChefHat, Heart, Clock, Shield, Mail, Phone, MapPin, ArrowDown, Calendar, ShoppingCart, Plane, Truck, Utensils, ChevronDown, Globe } from 'lucide-react';
+import Image from 'next/image';
 
 const openWhatsApp = () => {
   window.open('https://wa.me/972545448423', '_blank');
@@ -396,8 +397,17 @@ function KampaiLandingContent() {
       {/* Floating Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-          <div className="text-2xl font-light text-gray-900">
-            <span className="font-bold">Kampai</span> <span className="text-gray-600">TLV</span> 🍶
+          <div className="flex items-center gap-3">
+            <Image
+              src="/images/kampai-logo.svg"
+              alt="Kampai TLV Logo"
+              width={40}
+              height={60}
+              className="object-contain"
+            />
+            <div className="text-2xl font-light text-gray-900">
+              <span className="font-bold">Kampai</span> <span className="text-gray-600">TLV</span>
+            </div>
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium">
             <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-gray-900 transition-colors">{t('nav.about')}</button>
@@ -488,6 +498,15 @@ function KampaiLandingContent() {
             <p>
               {t('about.p3')}
             </p>
+          </div>
+          <div className="mt-12">
+            <Image
+              src="/images/kampai-logo.svg"
+              alt="Kampai TLV Logo"
+              width={120}
+              height={180}
+              className="mx-auto object-contain"
+            />
           </div>
         </div>
       </section>

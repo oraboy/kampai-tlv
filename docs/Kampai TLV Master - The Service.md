@@ -73,6 +73,6 @@ Sample products
 
 - Uni \- Description of the Uni product and quality. Hi quality, premium. Use image from: [https://storage.googleapis.com/duckr-b8e76.appspot.com/resized/aS9MfEC71-b2845133a81ea80a8efa69ad70effa79dff2c60a56e3a5168a41c0c789505a12\_896x504.jpg](https://storage.googleapis.com/duckr-b8e76.appspot.com/resized/aS9MfEC71-b2845133a81ea80a8efa69ad70effa79dff2c60a56e3a5168a41c0c789505a12_896x504.jpg) or other.   
 - Unagi \- Description of the Unagi product and quality. Hi quality, premium. Use image from:[https://storage.googleapis.com/duckr-b8e76.appspot.com/resized/bfuUD-Alj-4b4fb0de7d0c038bc6b0d0b2a097cc035a4bc0785bc04cfebe1173bb65152f54\_896x504.jpg](https://storage.googleapis.com/duckr-b8e76.appspot.com/resized/bfuUD-Alj-4b4fb0de7d0c038bc6b0d0b2a097cc035a4bc0785bc04cfebe1173bb65152f54_896x504.jpg) or similar  
-- Binchotan \- Description of the Unagi product and quality. Hi quality, premium. Use image from [https://en.wikipedia.org/wiki/Binch%C5%8Dtan](https://en.wikipedia.org/wiki/Binch%C5%8Dtan) or similar
+- Binchotan \- Description of the Unagi product and quality. Hi quality, premium. Use image from [https://i5.walmartimages.com/seo/Premium-Binchotan-White-Charcoal_8a1efa64-3e84-437a-9600-2e36c3629e9c.dbfbbb102a84cf04235b6d7b10941408.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF] or similar
 
 Browse our catalog \- Placeholder for a future shopify site. 
